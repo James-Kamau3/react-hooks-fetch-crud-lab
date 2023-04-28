@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function QuestionItem({ question }) {
+
   const { id, prompt, answers, correctIndex } = question;
 
   const options = answers.map((answer, index) => (
@@ -23,3 +24,4 @@ function QuestionItem({ question }) {
 }
 
 export default QuestionItem;
+
